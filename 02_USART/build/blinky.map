@@ -1,0 +1,745 @@
+Archive member included because of file (symbol)
+
+/Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(misc.o)
+                              /Users/User/Desktop/STM32F4_Examples/02_USART/build/main.o (NVIC_Init)
+/Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_rcc.o)
+                              /Users/User/Desktop/STM32F4_Examples/02_USART/build/main.o (RCC_AHB1PeriphClockCmd)
+/Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_gpio.o)
+                              /Users/User/Desktop/STM32F4_Examples/02_USART/build/main.o (GPIO_Init)
+/Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_usart.o)
+                              /Users/User/Desktop/STM32F4_Examples/02_USART/build/main.o (USART_Init)
+
+Allocating common symbols
+Common symbol       size              file
+
+received_str        0xb               /Users/User/Desktop/STM32F4_Examples/02_USART/build/stm32f4xx_it.o
+msTicks             0x4               /Users/User/Desktop/STM32F4_Examples/02_USART/build/main.o
+
+Discarded input sections
+
+ .data          0x0000000000000000        0x0 /Users/User/Desktop/STM32F4_Examples/02_USART/build/main.o
+ .bss           0x0000000000000000        0x0 /Users/User/Desktop/STM32F4_Examples/02_USART/build/main.o
+ .data          0x0000000000000000        0x0 /Users/User/Desktop/STM32F4_Examples/02_USART/build/startup_stm32f4xx.o
+ .bss           0x0000000000000000        0x0 /Users/User/Desktop/STM32F4_Examples/02_USART/build/startup_stm32f4xx.o
+ .data          0x0000000000000000        0x0 /Users/User/Desktop/STM32F4_Examples/02_USART/build/stm32f4xx_it.o
+ .bss           0x0000000000000000        0x0 /Users/User/Desktop/STM32F4_Examples/02_USART/build/system_stm32f4xx.o
+ .text          0x0000000000000000       0x18 /Users/User/Desktop/STM32F4_Examples/02_USART/build/CortexM4asmOps.o
+ .data          0x0000000000000000        0x0 /Users/User/Desktop/STM32F4_Examples/02_USART/build/CortexM4asmOps.o
+ .bss           0x0000000000000000        0x0 /Users/User/Desktop/STM32F4_Examples/02_USART/build/CortexM4asmOps.o
+ .ARM.attributes
+                0x0000000000000000       0x21 /Users/User/Desktop/STM32F4_Examples/02_USART/build/CortexM4asmOps.o
+ .data          0x0000000000000000        0x0 /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(misc.o)
+ .bss           0x0000000000000000        0x0 /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(misc.o)
+ .bss           0x0000000000000000        0x0 /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_rcc.o)
+ .data          0x0000000000000000        0x0 /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_gpio.o)
+ .bss           0x0000000000000000        0x0 /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_gpio.o)
+ .data          0x0000000000000000        0x0 /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_usart.o)
+ .bss           0x0000000000000000        0x0 /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_usart.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+FLASH            0x0000000008000000 0x0000000000100000 xr
+RAM              0x0000000020000000 0x0000000000020000 xrw
+CCM              0x0000000010000000 0x0000000000010000 xrw
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD /Users/User/Desktop/STM32F4_Examples/02_USART/build/main.o
+LOAD /Users/User/Desktop/STM32F4_Examples/02_USART/build/startup_stm32f4xx.o
+LOAD /Users/User/Desktop/STM32F4_Examples/02_USART/build/stm32f4xx_it.o
+LOAD /Users/User/Desktop/STM32F4_Examples/02_USART/build/system_stm32f4xx.o
+LOAD /Users/User/Desktop/STM32F4_Examples/02_USART/build/CortexM4asmOps.o
+LOAD /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a
+LOAD /usr/local/Cellar/gcc-arm-none-eabi-48/20131218/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7e-m/libc_s.a
+LOAD /usr/local/Cellar/gcc-arm-none-eabi-48/20131218/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7e-m/libgcc.a
+LOAD /usr/local/Cellar/gcc-arm-none-eabi-48/20131218/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7e-m/libnosys.a
+START GROUP
+LOAD /usr/local/Cellar/gcc-arm-none-eabi-48/20131218/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7e-m/libgcc.a
+LOAD /usr/local/Cellar/gcc-arm-none-eabi-48/20131218/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7e-m/libc_s.a
+END GROUP
+START GROUP
+LOAD /usr/local/Cellar/gcc-arm-none-eabi-48/20131218/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7e-m/libgcc.a
+LOAD /usr/local/Cellar/gcc-arm-none-eabi-48/20131218/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7e-m/libc_s.a
+END GROUP
+                0x0000000020020000                _estack = 0x20020000
+                0x0000000000000000                _Min_Heap_Size = 0x0
+                0x0000000000000400                _Min_Stack_Size = 0x400
+
+.isr_vector     0x0000000008000000      0x188
+                0x0000000008000000                . = ALIGN (0x4)
+ *(.isr_vector)
+ .isr_vector    0x0000000008000000      0x188 /Users/User/Desktop/STM32F4_Examples/02_USART/build/startup_stm32f4xx.o
+                0x0000000008000000                g_pfnVectors
+                0x0000000008000188                . = ALIGN (0x4)
+
+.text           0x0000000008000188     0x1120
+                0x0000000008000188                . = ALIGN (0x4)
+ *(.text)
+ .text          0x0000000008000188      0x13c /Users/User/Desktop/STM32F4_Examples/02_USART/build/main.o
+                0x0000000008000188                SysTick_Handler
+                0x0000000008000198                setSysTick
+                0x00000000080001dc                setup_Periph
+                0x0000000008000290                USART_puts
+ .text          0x00000000080002c4       0x70 /Users/User/Desktop/STM32F4_Examples/02_USART/build/startup_stm32f4xx.o
+                0x00000000080002c4                DMA1_Stream3_IRQHandler
+                0x00000000080002c4                HASH_RNG_IRQHandler
+                0x00000000080002c4                EXTI2_IRQHandler
+                0x00000000080002c4                TIM8_CC_IRQHandler
+                0x00000000080002c4                DebugMon_Handler
+                0x00000000080002c4                TIM1_CC_IRQHandler
+                0x00000000080002c4                DMA2_Stream5_IRQHandler
+                0x00000000080002c4                DMA1_Stream5_IRQHandler
+                0x00000000080002c4                PVD_IRQHandler
+                0x00000000080002c4                SDIO_IRQHandler
+                0x00000000080002c4                TAMP_STAMP_IRQHandler
+                0x00000000080002c4                PendSV_Handler
+                0x00000000080002c4                CAN2_RX1_IRQHandler
+                0x00000000080002c4                EXTI3_IRQHandler
+                0x00000000080002c4                TIM8_TRG_COM_TIM14_IRQHandler
+                0x00000000080002c4                TIM1_UP_TIM10_IRQHandler
+                0x00000000080002c4                TIM8_UP_TIM13_IRQHandler
+                0x00000000080002c4                I2C3_ER_IRQHandler
+                0x00000000080002c4                EXTI0_IRQHandler
+                0x00000000080002c4                I2C2_EV_IRQHandler
+                0x00000000080002c4                DMA1_Stream2_IRQHandler
+                0x00000000080002c4                CAN1_RX0_IRQHandler
+                0x00000000080002c4                FPU_IRQHandler
+                0x00000000080002c4                OTG_HS_WKUP_IRQHandler
+                0x00000000080002c4                UsageFault_Handler
+                0x00000000080002c4                CAN2_SCE_IRQHandler
+                0x00000000080002c4                DMA2_Stream2_IRQHandler
+                0x00000000080002c4                SPI1_IRQHandler
+                0x00000000080002c4                TIM6_DAC_IRQHandler
+                0x00000000080002c4                TIM1_BRK_TIM9_IRQHandler
+                0x00000000080002c4                DCMI_IRQHandler
+                0x00000000080002c4                CAN2_RX0_IRQHandler
+                0x00000000080002c4                DMA2_Stream3_IRQHandler
+                0x00000000080002c4                USART6_IRQHandler
+                0x00000000080002c4                USART3_IRQHandler
+                0x00000000080002c4                CRYP_IRQHandler
+                0x00000000080002c4                RTC_Alarm_IRQHandler
+                0x00000000080002c4                CAN1_RX1_IRQHandler
+                0x00000000080002c4                UART5_IRQHandler
+                0x00000000080002c4                DMA2_Stream0_IRQHandler
+                0x00000000080002c4                TIM4_IRQHandler
+                0x00000000080002c4                I2C1_EV_IRQHandler
+                0x00000000080002c4                DMA1_Stream6_IRQHandler
+                0x00000000080002c4                DMA1_Stream1_IRQHandler
+                0x00000000080002c4                UART4_IRQHandler
+                0x00000000080002c4                TIM3_IRQHandler
+                0x00000000080002c4                RCC_IRQHandler
+                0x00000000080002c4                TIM8_BRK_TIM12_IRQHandler
+                0x00000000080002c4                Default_Handler
+                0x00000000080002c4                EXTI15_10_IRQHandler
+                0x00000000080002c4                ADC_IRQHandler
+                0x00000000080002c4                DMA1_Stream7_IRQHandler
+                0x00000000080002c4                TIM7_IRQHandler
+                0x00000000080002c4                CAN2_TX_IRQHandler
+                0x00000000080002c4                TIM5_IRQHandler
+                0x00000000080002c4                DMA2_Stream7_IRQHandler
+                0x00000000080002c4                I2C3_EV_IRQHandler
+                0x00000000080002c4                EXTI9_5_IRQHandler
+                0x00000000080002c4                RTC_WKUP_IRQHandler
+                0x00000000080002c4                ETH_WKUP_IRQHandler
+                0x00000000080002c4                SPI2_IRQHandler
+                0x00000000080002c4                OTG_HS_EP1_IN_IRQHandler
+                0x00000000080002c4                MemManage_Handler
+                0x00000000080002c4                DMA1_Stream0_IRQHandler
+                0x00000000080002c4                CAN1_TX_IRQHandler
+                0x00000000080002c4                SVC_Handler
+                0x00000000080002c4                EXTI4_IRQHandler
+                0x00000000080002c4                FSMC_IRQHandler
+                0x00000000080002c4                ETH_IRQHandler
+                0x00000000080002c4                OTG_HS_EP1_OUT_IRQHandler
+                0x00000000080002c4                WWDG_IRQHandler
+                0x00000000080002c4                TIM2_IRQHandler
+                0x00000000080002c4                OTG_FS_WKUP_IRQHandler
+                0x00000000080002c4                TIM1_TRG_COM_TIM11_IRQHandler
+                0x00000000080002c4                OTG_HS_IRQHandler
+                0x00000000080002c4                EXTI1_IRQHandler
+                0x00000000080002c4                I2C2_ER_IRQHandler
+                0x00000000080002c4                DMA2_Stream1_IRQHandler
+                0x00000000080002c4                CAN1_SCE_IRQHandler
+                0x00000000080002c4                FLASH_IRQHandler
+                0x00000000080002c4                DMA2_Stream4_IRQHandler
+                0x00000000080002c4                BusFault_Handler
+                0x00000000080002c4                USART1_IRQHandler
+                0x00000000080002c4                OTG_FS_IRQHandler
+                0x00000000080002c4                SPI3_IRQHandler
+                0x00000000080002c4                DMA1_Stream4_IRQHandler
+                0x00000000080002c4                I2C1_ER_IRQHandler
+                0x00000000080002c4                DMA2_Stream6_IRQHandler
+                0x00000000080002c8                Reset_Handler
+ .text          0x0000000008000334       0x70 /Users/User/Desktop/STM32F4_Examples/02_USART/build/stm32f4xx_it.o
+                0x0000000008000334                NMI_Handler
+                0x0000000008000338                HardFault_Handler
+                0x0000000008000358                USART2_IRQHandler
+ .text          0x00000000080003a4      0x158 /Users/User/Desktop/STM32F4_Examples/02_USART/build/system_stm32f4xx.o
+                0x00000000080003a4                SystemInit
+                0x0000000008000494                SystemCoreClockUpdate
+ .text          0x00000000080004fc       0xd0 /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(misc.o)
+                0x00000000080004fc                NVIC_PriorityGroupConfig
+                0x0000000008000510                NVIC_Init
+                0x0000000008000588                NVIC_SetVectorTable
+                0x000000000800059c                NVIC_SystemLPConfig
+                0x00000000080005b4                SysTick_CLKSourceConfig
+ .text          0x00000000080005cc      0x53c /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_rcc.o)
+                0x00000000080005cc                RCC_DeInit
+                0x000000000800061c                RCC_HSEConfig
+                0x000000000800062c                RCC_WaitForHSEStartUp
+                0x0000000008000664                RCC_AdjustHSICalibrationValue
+                0x0000000008000678                RCC_HSICmd
+                0x0000000008000684                RCC_LSEConfig
+                0x00000000080006a4                RCC_LSICmd
+                0x00000000080006b0                RCC_PLLConfig
+                0x00000000080006d4                RCC_PLLCmd
+                0x00000000080006e0                RCC_PLLI2SConfig
+                0x00000000080006f4                RCC_PLLI2SCmd
+                0x0000000008000700                RCC_PLLSAIConfig
+                0x0000000008000718                RCC_PLLSAICmd
+                0x0000000008000724                RCC_ClockSecuritySystemCmd
+                0x0000000008000730                RCC_MCO1Config
+                0x0000000008000744                RCC_MCO2Config
+                0x0000000008000758                RCC_SYSCLKConfig
+                0x000000000800076c                RCC_GetSYSCLKSource
+                0x000000000800077c                RCC_HCLKConfig
+                0x0000000008000790                RCC_PCLK1Config
+                0x00000000080007a4                RCC_PCLK2Config
+                0x00000000080007b8                RCC_GetClocksFreq
+                0x0000000008000848                RCC_RTCCLKConfig
+                0x0000000008000878                RCC_RTCCLKCmd
+                0x0000000008000884                RCC_BackupResetCmd
+                0x0000000008000890                RCC_I2SCLKConfig
+                0x000000000800089c                RCC_SAIPLLI2SClkDivConfig
+                0x00000000080008b4                RCC_SAIPLLSAIClkDivConfig
+                0x00000000080008d0                RCC_SAIBlockACLKConfig
+                0x00000000080008e8                RCC_SAIBlockBCLKConfig
+                0x0000000008000900                RCC_LTDCCLKDivConfig
+                0x0000000008000918                RCC_TIMCLKPresConfig
+                0x0000000008000924                RCC_AHB1PeriphClockCmd
+                0x000000000800093c                RCC_AHB2PeriphClockCmd
+                0x0000000008000954                RCC_AHB3PeriphClockCmd
+                0x000000000800096c                RCC_APB1PeriphClockCmd
+                0x0000000008000984                RCC_APB2PeriphClockCmd
+                0x000000000800099c                RCC_AHB1PeriphResetCmd
+                0x00000000080009b4                RCC_AHB2PeriphResetCmd
+                0x00000000080009cc                RCC_AHB3PeriphResetCmd
+                0x00000000080009e4                RCC_APB1PeriphResetCmd
+                0x00000000080009fc                RCC_APB2PeriphResetCmd
+                0x0000000008000a14                RCC_AHB1PeriphClockLPModeCmd
+                0x0000000008000a2c                RCC_AHB2PeriphClockLPModeCmd
+                0x0000000008000a44                RCC_AHB3PeriphClockLPModeCmd
+                0x0000000008000a5c                RCC_APB1PeriphClockLPModeCmd
+                0x0000000008000a74                RCC_APB2PeriphClockLPModeCmd
+                0x0000000008000a8c                RCC_ITConfig
+                0x0000000008000aa4                RCC_GetFlagStatus
+                0x0000000008000ad8                RCC_ClearFlag
+                0x0000000008000ae8                RCC_GetITStatus
+                0x0000000008000afc                RCC_ClearITPendingBit
+ .text          0x0000000008000b08      0x2c4 /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_gpio.o)
+                0x0000000008000b08                GPIO_DeInit
+                0x0000000008000c64                GPIO_Init
+                0x0000000008000d24                GPIO_StructInit
+                0x0000000008000d38                GPIO_PinLockConfig
+                0x0000000008000d5c                GPIO_ReadInputDataBit
+                0x0000000008000d68                GPIO_ReadInputData
+                0x0000000008000d70                GPIO_ReadOutputDataBit
+                0x0000000008000d7c                GPIO_ReadOutputData
+                0x0000000008000d84                GPIO_SetBits
+                0x0000000008000d88                GPIO_ResetBits
+                0x0000000008000d8c                GPIO_WriteBit
+                0x0000000008000d98                GPIO_Write
+                0x0000000008000d9c                GPIO_ToggleBits
+                0x0000000008000da4                GPIO_PinAFConfig
+ .text          0x0000000008000dcc      0x478 /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_usart.o)
+                0x0000000008000dcc                USART_DeInit
+                0x0000000008000ed8                USART_Init
+                0x0000000008000f9c                USART_StructInit
+                0x0000000008000fb4                USART_ClockInit
+                0x0000000008000fd8                USART_ClockStructInit
+                0x0000000008000fe4                USART_Cmd
+                0x0000000008001000                USART_SetPrescaler
+                0x0000000008001014                USART_OverSampling8Cmd
+                0x0000000008001030                USART_OneBitMethodCmd
+                0x000000000800104c                USART_SendData
+                0x0000000008001054                USART_ReceiveData
+                0x000000000800105c                USART_SetAddress
+                0x0000000008001074                USART_ReceiverWakeUpCmd
+                0x0000000008001090                USART_WakeUpConfig
+                0x00000000080010a8                USART_LINBreakDetectLengthConfig
+                0x00000000080010c0                USART_LINCmd
+                0x00000000080010dc                USART_SendBreak
+                0x00000000080010e8                USART_HalfDuplexCmd
+                0x0000000008001104                USART_SetGuardTime
+                0x0000000008001118                USART_SmartCardCmd
+                0x0000000008001134                USART_SmartCardNACKCmd
+                0x0000000008001150                USART_IrDAConfig
+                0x0000000008001168                USART_IrDACmd
+                0x0000000008001184                USART_DMACmd
+                0x0000000008001198                USART_ITConfig
+                0x00000000080011d4                USART_GetFlagStatus
+                0x00000000080011e0                USART_ClearFlag
+                0x00000000080011e8                USART_GetITStatus
+                0x0000000008001234                USART_ClearITPendingBit
+ *(.text*)
+ .text.startup  0x0000000008001244       0x54 /Users/User/Desktop/STM32F4_Examples/02_USART/build/main.o
+                0x0000000008001244                main
+ *(.rodata)
+ *(.rodata*)
+ .rodata.str1.4
+                0x0000000008001298       0x10 /Users/User/Desktop/STM32F4_Examples/02_USART/build/main.o
+ *(.glue_7)
+ .glue_7        0x0000000000000000        0x0 linker stubs
+ *(.glue_7t)
+ .glue_7t       0x0000000000000000        0x0 linker stubs
+ *(.eh_frame)
+ *(.init)
+ *(.fini)
+                0x00000000080012a8                . = ALIGN (0x4)
+                0x00000000080012a8                _etext = .
+                0x00000000080012a8                _exit = .
+
+.vfp11_veneer   0x00000000080012a8        0x0
+ .vfp11_veneer  0x0000000000000000        0x0 linker stubs
+
+.v4_bx          0x00000000080012a8        0x0
+ .v4_bx         0x0000000000000000        0x0 linker stubs
+
+.iplt           0x00000000080012a8        0x0
+ .iplt          0x0000000000000000        0x0 /Users/User/Desktop/STM32F4_Examples/02_USART/build/main.o
+
+.rel.dyn        0x00000000080012a8        0x0
+ .rel.iplt      0x0000000000000000        0x0 /Users/User/Desktop/STM32F4_Examples/02_USART/build/main.o
+
+.ARM.extab
+ *(.ARM.extab* .gnu.linkonce.armextab.*)
+
+.ARM            0x00000000080012a8        0x0
+                0x00000000080012a8                __exidx_start = .
+ *(.ARM.exidx*)
+                0x00000000080012a8                __exidx_end = .
+
+.preinit_array  0x00000000080012a8        0x0
+                0x00000000080012a8                PROVIDE (__preinit_array_start, .)
+ *(.preinit_array*)
+                0x00000000080012a8                PROVIDE (__preinit_array_end, .)
+
+.init_array     0x00000000080012a8        0x0
+                0x00000000080012a8                PROVIDE (__init_array_start, .)
+ *(SORT(.init_array.*))
+ *(.init_array*)
+                0x00000000080012a8                PROVIDE (__init_array_end, .)
+
+.fini_array     0x00000000080012a8        0x0
+                0x00000000080012a8                PROVIDE (__fini_array_start, .)
+ *(.fini_array*)
+ *(SORT(.fini_array.*))
+                0x00000000080012a8                PROVIDE (__fini_array_end, .)
+                0x00000000080012a8                __sidata = .
+
+.data           0x0000000020000000       0x24 load address 0x00000000080012a8
+                0x0000000020000000                . = ALIGN (0x4)
+                0x0000000020000000                _sdata = .
+                0x0000000020000000                __data_start__ = _sdata
+ *(.data)
+ .data          0x0000000020000000       0x14 /Users/User/Desktop/STM32F4_Examples/02_USART/build/system_stm32f4xx.o
+                0x0000000020000000                AHBPrescTable
+                0x0000000020000010                SystemCoreClock
+ .data          0x0000000020000014       0x10 /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_rcc.o)
+ *(.data*)
+                0x0000000020000024                . = ALIGN (0x4)
+                0x0000000020000024                _edata = .
+                0x0000000020000024                __data_end__ = _edata
+
+.igot.plt       0x0000000020000024        0x0 load address 0x00000000080012cc
+ .igot.plt      0x0000000000000000        0x0 /Users/User/Desktop/STM32F4_Examples/02_USART/build/main.o
+                0x0000000020000024                . = ALIGN (0x4)
+
+.bss            0x0000000020000024       0x14 load address 0x00000000080012cc
+                0x0000000020000024                _sbss = .
+                0x0000000020000024                __bss_start__ = _sbss
+ *(.bss)
+ .bss           0x0000000020000024        0x4 /Users/User/Desktop/STM32F4_Examples/02_USART/build/stm32f4xx_it.o
+ *(.bss*)
+ *(COMMON)
+ COMMON         0x0000000020000028        0x4 /Users/User/Desktop/STM32F4_Examples/02_USART/build/main.o
+                0x0000000020000028                msTicks
+ COMMON         0x000000002000002c        0xb /Users/User/Desktop/STM32F4_Examples/02_USART/build/stm32f4xx_it.o
+                0x000000002000002c                received_str
+                0x0000000020000038                . = ALIGN (0x4)
+ *fill*         0x0000000020000037        0x1 
+                0x0000000020000038                _ebss = .
+                0x0000000020000038                __bss_end__ = _ebss
+
+._user_heap_stack
+                0x0000000020000038      0x400 load address 0x00000000080012e0
+                0x0000000020000038                . = ALIGN (0x4)
+                0x0000000020000038                PROVIDE (end, .)
+                0x0000000020000038                PROVIDE (_end, .)
+                0x0000000020000038                . = (. + _Min_Heap_Size)
+                0x0000000020000438                . = (. + _Min_Stack_Size)
+ *fill*         0x0000000020000038      0x400 
+                0x0000000020000438                . = ALIGN (0x4)
+OUTPUT(/Users/User/Desktop/STM32F4_Examples/02_USART/build/blinky.elf elf32-littlearm)
+
+.debug_info     0x0000000000000000     0x3e82
+ .debug_info    0x0000000000000000      0xd4b /Users/User/Desktop/STM32F4_Examples/02_USART/build/main.o
+ .debug_info    0x0000000000000d4b      0x11d /Users/User/Desktop/STM32F4_Examples/02_USART/build/startup_stm32f4xx.o
+ .debug_info    0x0000000000000e68      0x30c /Users/User/Desktop/STM32F4_Examples/02_USART/build/stm32f4xx_it.o
+ .debug_info    0x0000000000001174      0x5b6 /Users/User/Desktop/STM32F4_Examples/02_USART/build/system_stm32f4xx.o
+ .debug_info    0x000000000000172a      0x526 /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(misc.o)
+ .debug_info    0x0000000000001c50      0xe96 /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_rcc.o)
+ .debug_info    0x0000000000002ae6      0x819 /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_gpio.o)
+ .debug_info    0x00000000000032ff      0xb83 /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_usart.o)
+
+.debug_abbrev   0x0000000000000000      0xe3d
+ .debug_abbrev  0x0000000000000000      0x304 /Users/User/Desktop/STM32F4_Examples/02_USART/build/main.o
+ .debug_abbrev  0x0000000000000304       0xe5 /Users/User/Desktop/STM32F4_Examples/02_USART/build/startup_stm32f4xx.o
+ .debug_abbrev  0x00000000000003e9      0x17d /Users/User/Desktop/STM32F4_Examples/02_USART/build/stm32f4xx_it.o
+ .debug_abbrev  0x0000000000000566      0x145 /Users/User/Desktop/STM32F4_Examples/02_USART/build/system_stm32f4xx.o
+ .debug_abbrev  0x00000000000006ab      0x156 /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(misc.o)
+ .debug_abbrev  0x0000000000000801      0x257 /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_rcc.o)
+ .debug_abbrev  0x0000000000000a58      0x1f8 /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_gpio.o)
+ .debug_abbrev  0x0000000000000c50      0x1ed /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_usart.o)
+
+.debug_loc      0x0000000000000000     0x1ca6
+ .debug_loc     0x0000000000000000      0x115 /Users/User/Desktop/STM32F4_Examples/02_USART/build/main.o
+ .debug_loc     0x0000000000000115       0x5e /Users/User/Desktop/STM32F4_Examples/02_USART/build/startup_stm32f4xx.o
+ .debug_loc     0x0000000000000173       0x1e /Users/User/Desktop/STM32F4_Examples/02_USART/build/stm32f4xx_it.o
+ .debug_loc     0x0000000000000191      0x144 /Users/User/Desktop/STM32F4_Examples/02_USART/build/system_stm32f4xx.o
+ .debug_loc     0x00000000000002d5      0x15d /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(misc.o)
+ .debug_loc     0x0000000000000432      0xd25 /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_rcc.o)
+ .debug_loc     0x0000000000001157      0x3b8 /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_gpio.o)
+ .debug_loc     0x000000000000150f      0x797 /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_usart.o)
+
+.debug_aranges  0x0000000000000000      0x108
+ .debug_aranges
+                0x0000000000000000       0x28 /Users/User/Desktop/STM32F4_Examples/02_USART/build/main.o
+ .debug_aranges
+                0x0000000000000028       0x20 /Users/User/Desktop/STM32F4_Examples/02_USART/build/startup_stm32f4xx.o
+ .debug_aranges
+                0x0000000000000048       0x20 /Users/User/Desktop/STM32F4_Examples/02_USART/build/stm32f4xx_it.o
+ .debug_aranges
+                0x0000000000000068       0x20 /Users/User/Desktop/STM32F4_Examples/02_USART/build/system_stm32f4xx.o
+ .debug_aranges
+                0x0000000000000088       0x20 /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(misc.o)
+ .debug_aranges
+                0x00000000000000a8       0x20 /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_rcc.o)
+ .debug_aranges
+                0x00000000000000c8       0x20 /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_gpio.o)
+ .debug_aranges
+                0x00000000000000e8       0x20 /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_usart.o)
+
+.debug_ranges   0x0000000000000000       0xc8
+ .debug_ranges  0x0000000000000000       0x80 /Users/User/Desktop/STM32F4_Examples/02_USART/build/main.o
+ .debug_ranges  0x0000000000000080       0x18 /Users/User/Desktop/STM32F4_Examples/02_USART/build/stm32f4xx_it.o
+ .debug_ranges  0x0000000000000098       0x18 /Users/User/Desktop/STM32F4_Examples/02_USART/build/system_stm32f4xx.o
+ .debug_ranges  0x00000000000000b0       0x18 /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_rcc.o)
+
+.debug_line     0x0000000000000000     0x105b
+ .debug_line    0x0000000000000000      0x286 /Users/User/Desktop/STM32F4_Examples/02_USART/build/main.o
+ .debug_line    0x0000000000000286       0x58 /Users/User/Desktop/STM32F4_Examples/02_USART/build/startup_stm32f4xx.o
+ .debug_line    0x00000000000002de      0x1c5 /Users/User/Desktop/STM32F4_Examples/02_USART/build/stm32f4xx_it.o
+ .debug_line    0x00000000000004a3      0x197 /Users/User/Desktop/STM32F4_Examples/02_USART/build/system_stm32f4xx.o
+ .debug_line    0x000000000000063a      0x188 /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(misc.o)
+ .debug_line    0x00000000000007c2      0x319 /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_rcc.o)
+ .debug_line    0x0000000000000adb      0x265 /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_gpio.o)
+ .debug_line    0x0000000000000d40      0x31b /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_usart.o)
+
+.debug_str      0x0000000000000000     0x1a64
+ .debug_str     0x0000000000000000      0xb1c /Users/User/Desktop/STM32F4_Examples/02_USART/build/main.o
+                                        0xb7c (size before relaxing)
+ .debug_str     0x0000000000000b1c       0xa0 /Users/User/Desktop/STM32F4_Examples/02_USART/build/startup_stm32f4xx.o
+                                        0x17d (size before relaxing)
+ .debug_str     0x0000000000000bbc       0xc0 /Users/User/Desktop/STM32F4_Examples/02_USART/build/stm32f4xx_it.o
+                                        0x2b9 (size before relaxing)
+ .debug_str     0x0000000000000c7c      0x15c /Users/User/Desktop/STM32F4_Examples/02_USART/build/system_stm32f4xx.o
+                                        0x3a8 (size before relaxing)
+ .debug_str     0x0000000000000dd8      0x1d4 /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(misc.o)
+                                        0x3f5 (size before relaxing)
+ .debug_str     0x0000000000000fac      0x649 /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_rcc.o)
+                                        0x9b1 (size before relaxing)
+ .debug_str     0x00000000000015f5      0x153 /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_gpio.o)
+                                        0x4e3 (size before relaxing)
+ .debug_str     0x0000000000001748      0x31c /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_usart.o)
+                                        0x6eb (size before relaxing)
+
+.comment        0x0000000000000000       0x70
+ .comment       0x0000000000000000       0x70 /Users/User/Desktop/STM32F4_Examples/02_USART/build/main.o
+                                         0x71 (size before relaxing)
+ .comment       0x0000000000000000       0x71 /Users/User/Desktop/STM32F4_Examples/02_USART/build/startup_stm32f4xx.o
+ .comment       0x0000000000000000       0x71 /Users/User/Desktop/STM32F4_Examples/02_USART/build/stm32f4xx_it.o
+ .comment       0x0000000000000000       0x71 /Users/User/Desktop/STM32F4_Examples/02_USART/build/system_stm32f4xx.o
+ .comment       0x0000000000000000       0x71 /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(misc.o)
+ .comment       0x0000000000000000       0x71 /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_rcc.o)
+ .comment       0x0000000000000000       0x71 /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_gpio.o)
+ .comment       0x0000000000000000       0x71 /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_usart.o)
+
+.ARM.attributes
+                0x0000000000000000       0x31
+ .ARM.attributes
+                0x0000000000000000       0x33 /Users/User/Desktop/STM32F4_Examples/02_USART/build/main.o
+ .ARM.attributes
+                0x0000000000000033       0x33 /Users/User/Desktop/STM32F4_Examples/02_USART/build/startup_stm32f4xx.o
+ .ARM.attributes
+                0x0000000000000066       0x33 /Users/User/Desktop/STM32F4_Examples/02_USART/build/stm32f4xx_it.o
+ .ARM.attributes
+                0x0000000000000099       0x33 /Users/User/Desktop/STM32F4_Examples/02_USART/build/system_stm32f4xx.o
+ .ARM.attributes
+                0x00000000000000cc       0x33 /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(misc.o)
+ .ARM.attributes
+                0x00000000000000ff       0x33 /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_rcc.o)
+ .ARM.attributes
+                0x0000000000000132       0x33 /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_gpio.o)
+ .ARM.attributes
+                0x0000000000000165       0x33 /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_usart.o)
+
+.debug_frame    0x0000000000000000      0x8c0
+ .debug_frame   0x0000000000000000       0x90 /Users/User/Desktop/STM32F4_Examples/02_USART/build/main.o
+ .debug_frame   0x0000000000000090       0x40 /Users/User/Desktop/STM32F4_Examples/02_USART/build/startup_stm32f4xx.o
+ .debug_frame   0x00000000000000d0       0xbc /Users/User/Desktop/STM32F4_Examples/02_USART/build/stm32f4xx_it.o
+ .debug_frame   0x000000000000018c       0x34 /Users/User/Desktop/STM32F4_Examples/02_USART/build/system_stm32f4xx.o
+ .debug_frame   0x00000000000001c0       0x6c /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(misc.o)
+ .debug_frame   0x000000000000022c      0x36c /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_rcc.o)
+ .debug_frame   0x0000000000000598      0x118 /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_gpio.o)
+ .debug_frame   0x00000000000006b0      0x210 /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_usart.o)
+
+Cross Reference Table
+
+Symbol                                            File
+ADC_IRQHandler                                    /Users/User/Desktop/STM32F4_Examples/02_USART/build/startup_stm32f4xx.o
+AHBPrescTable                                     /Users/User/Desktop/STM32F4_Examples/02_USART/build/system_stm32f4xx.o
+BusFault_Handler                                  /Users/User/Desktop/STM32F4_Examples/02_USART/build/startup_stm32f4xx.o
+CAN1_RX0_IRQHandler                               /Users/User/Desktop/STM32F4_Examples/02_USART/build/startup_stm32f4xx.o
+CAN1_RX1_IRQHandler                               /Users/User/Desktop/STM32F4_Examples/02_USART/build/startup_stm32f4xx.o
+CAN1_SCE_IRQHandler                               /Users/User/Desktop/STM32F4_Examples/02_USART/build/startup_stm32f4xx.o
+CAN1_TX_IRQHandler                                /Users/User/Desktop/STM32F4_Examples/02_USART/build/startup_stm32f4xx.o
+CAN2_RX0_IRQHandler                               /Users/User/Desktop/STM32F4_Examples/02_USART/build/startup_stm32f4xx.o
+CAN2_RX1_IRQHandler                               /Users/User/Desktop/STM32F4_Examples/02_USART/build/startup_stm32f4xx.o
+CAN2_SCE_IRQHandler                               /Users/User/Desktop/STM32F4_Examples/02_USART/build/startup_stm32f4xx.o
+CAN2_TX_IRQHandler                                /Users/User/Desktop/STM32F4_Examples/02_USART/build/startup_stm32f4xx.o
+CRYP_IRQHandler                                   /Users/User/Desktop/STM32F4_Examples/02_USART/build/startup_stm32f4xx.o
+DCMI_IRQHandler                                   /Users/User/Desktop/STM32F4_Examples/02_USART/build/startup_stm32f4xx.o
+DMA1_Stream0_IRQHandler                           /Users/User/Desktop/STM32F4_Examples/02_USART/build/startup_stm32f4xx.o
+DMA1_Stream1_IRQHandler                           /Users/User/Desktop/STM32F4_Examples/02_USART/build/startup_stm32f4xx.o
+DMA1_Stream2_IRQHandler                           /Users/User/Desktop/STM32F4_Examples/02_USART/build/startup_stm32f4xx.o
+DMA1_Stream3_IRQHandler                           /Users/User/Desktop/STM32F4_Examples/02_USART/build/startup_stm32f4xx.o
+DMA1_Stream4_IRQHandler                           /Users/User/Desktop/STM32F4_Examples/02_USART/build/startup_stm32f4xx.o
+DMA1_Stream5_IRQHandler                           /Users/User/Desktop/STM32F4_Examples/02_USART/build/startup_stm32f4xx.o
+DMA1_Stream6_IRQHandler                           /Users/User/Desktop/STM32F4_Examples/02_USART/build/startup_stm32f4xx.o
+DMA1_Stream7_IRQHandler                           /Users/User/Desktop/STM32F4_Examples/02_USART/build/startup_stm32f4xx.o
+DMA2_Stream0_IRQHandler                           /Users/User/Desktop/STM32F4_Examples/02_USART/build/startup_stm32f4xx.o
+DMA2_Stream1_IRQHandler                           /Users/User/Desktop/STM32F4_Examples/02_USART/build/startup_stm32f4xx.o
+DMA2_Stream2_IRQHandler                           /Users/User/Desktop/STM32F4_Examples/02_USART/build/startup_stm32f4xx.o
+DMA2_Stream3_IRQHandler                           /Users/User/Desktop/STM32F4_Examples/02_USART/build/startup_stm32f4xx.o
+DMA2_Stream4_IRQHandler                           /Users/User/Desktop/STM32F4_Examples/02_USART/build/startup_stm32f4xx.o
+DMA2_Stream5_IRQHandler                           /Users/User/Desktop/STM32F4_Examples/02_USART/build/startup_stm32f4xx.o
+DMA2_Stream6_IRQHandler                           /Users/User/Desktop/STM32F4_Examples/02_USART/build/startup_stm32f4xx.o
+DMA2_Stream7_IRQHandler                           /Users/User/Desktop/STM32F4_Examples/02_USART/build/startup_stm32f4xx.o
+DebugMon_Handler                                  /Users/User/Desktop/STM32F4_Examples/02_USART/build/startup_stm32f4xx.o
+Default_Handler                                   /Users/User/Desktop/STM32F4_Examples/02_USART/build/startup_stm32f4xx.o
+ETH_IRQHandler                                    /Users/User/Desktop/STM32F4_Examples/02_USART/build/startup_stm32f4xx.o
+ETH_WKUP_IRQHandler                               /Users/User/Desktop/STM32F4_Examples/02_USART/build/startup_stm32f4xx.o
+EXTI0_IRQHandler                                  /Users/User/Desktop/STM32F4_Examples/02_USART/build/startup_stm32f4xx.o
+EXTI15_10_IRQHandler                              /Users/User/Desktop/STM32F4_Examples/02_USART/build/startup_stm32f4xx.o
+EXTI1_IRQHandler                                  /Users/User/Desktop/STM32F4_Examples/02_USART/build/startup_stm32f4xx.o
+EXTI2_IRQHandler                                  /Users/User/Desktop/STM32F4_Examples/02_USART/build/startup_stm32f4xx.o
+EXTI3_IRQHandler                                  /Users/User/Desktop/STM32F4_Examples/02_USART/build/startup_stm32f4xx.o
+EXTI4_IRQHandler                                  /Users/User/Desktop/STM32F4_Examples/02_USART/build/startup_stm32f4xx.o
+EXTI9_5_IRQHandler                                /Users/User/Desktop/STM32F4_Examples/02_USART/build/startup_stm32f4xx.o
+FLASH_IRQHandler                                  /Users/User/Desktop/STM32F4_Examples/02_USART/build/startup_stm32f4xx.o
+FPU_IRQHandler                                    /Users/User/Desktop/STM32F4_Examples/02_USART/build/startup_stm32f4xx.o
+FSMC_IRQHandler                                   /Users/User/Desktop/STM32F4_Examples/02_USART/build/startup_stm32f4xx.o
+GPIO_DeInit                                       /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_gpio.o)
+GPIO_Init                                         /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_gpio.o)
+                                                  /Users/User/Desktop/STM32F4_Examples/02_USART/build/main.o
+GPIO_PinAFConfig                                  /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_gpio.o)
+                                                  /Users/User/Desktop/STM32F4_Examples/02_USART/build/main.o
+GPIO_PinLockConfig                                /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_gpio.o)
+GPIO_ReadInputData                                /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_gpio.o)
+GPIO_ReadInputDataBit                             /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_gpio.o)
+GPIO_ReadOutputData                               /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_gpio.o)
+GPIO_ReadOutputDataBit                            /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_gpio.o)
+GPIO_ResetBits                                    /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_gpio.o)
+GPIO_SetBits                                      /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_gpio.o)
+GPIO_StructInit                                   /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_gpio.o)
+GPIO_ToggleBits                                   /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_gpio.o)
+GPIO_Write                                        /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_gpio.o)
+GPIO_WriteBit                                     /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_gpio.o)
+HASH_RNG_IRQHandler                               /Users/User/Desktop/STM32F4_Examples/02_USART/build/startup_stm32f4xx.o
+HardFault_Handler                                 /Users/User/Desktop/STM32F4_Examples/02_USART/build/stm32f4xx_it.o
+                                                  /Users/User/Desktop/STM32F4_Examples/02_USART/build/startup_stm32f4xx.o
+I2C1_ER_IRQHandler                                /Users/User/Desktop/STM32F4_Examples/02_USART/build/startup_stm32f4xx.o
+I2C1_EV_IRQHandler                                /Users/User/Desktop/STM32F4_Examples/02_USART/build/startup_stm32f4xx.o
+I2C2_ER_IRQHandler                                /Users/User/Desktop/STM32F4_Examples/02_USART/build/startup_stm32f4xx.o
+I2C2_EV_IRQHandler                                /Users/User/Desktop/STM32F4_Examples/02_USART/build/startup_stm32f4xx.o
+I2C3_ER_IRQHandler                                /Users/User/Desktop/STM32F4_Examples/02_USART/build/startup_stm32f4xx.o
+I2C3_EV_IRQHandler                                /Users/User/Desktop/STM32F4_Examples/02_USART/build/startup_stm32f4xx.o
+MemManage_Handler                                 /Users/User/Desktop/STM32F4_Examples/02_USART/build/startup_stm32f4xx.o
+NMI_Handler                                       /Users/User/Desktop/STM32F4_Examples/02_USART/build/stm32f4xx_it.o
+                                                  /Users/User/Desktop/STM32F4_Examples/02_USART/build/startup_stm32f4xx.o
+NVIC_Init                                         /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(misc.o)
+                                                  /Users/User/Desktop/STM32F4_Examples/02_USART/build/main.o
+NVIC_PriorityGroupConfig                          /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(misc.o)
+NVIC_SetVectorTable                               /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(misc.o)
+NVIC_SystemLPConfig                               /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(misc.o)
+OTG_FS_IRQHandler                                 /Users/User/Desktop/STM32F4_Examples/02_USART/build/startup_stm32f4xx.o
+OTG_FS_WKUP_IRQHandler                            /Users/User/Desktop/STM32F4_Examples/02_USART/build/startup_stm32f4xx.o
+OTG_HS_EP1_IN_IRQHandler                          /Users/User/Desktop/STM32F4_Examples/02_USART/build/startup_stm32f4xx.o
+OTG_HS_EP1_OUT_IRQHandler                         /Users/User/Desktop/STM32F4_Examples/02_USART/build/startup_stm32f4xx.o
+OTG_HS_IRQHandler                                 /Users/User/Desktop/STM32F4_Examples/02_USART/build/startup_stm32f4xx.o
+OTG_HS_WKUP_IRQHandler                            /Users/User/Desktop/STM32F4_Examples/02_USART/build/startup_stm32f4xx.o
+PVD_IRQHandler                                    /Users/User/Desktop/STM32F4_Examples/02_USART/build/startup_stm32f4xx.o
+PendSV_Handler                                    /Users/User/Desktop/STM32F4_Examples/02_USART/build/startup_stm32f4xx.o
+RCC_AHB1PeriphClockCmd                            /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_rcc.o)
+                                                  /Users/User/Desktop/STM32F4_Examples/02_USART/build/main.o
+RCC_AHB1PeriphClockLPModeCmd                      /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_rcc.o)
+RCC_AHB1PeriphResetCmd                            /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_rcc.o)
+                                                  /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_gpio.o)
+RCC_AHB2PeriphClockCmd                            /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_rcc.o)
+RCC_AHB2PeriphClockLPModeCmd                      /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_rcc.o)
+RCC_AHB2PeriphResetCmd                            /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_rcc.o)
+RCC_AHB3PeriphClockCmd                            /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_rcc.o)
+RCC_AHB3PeriphClockLPModeCmd                      /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_rcc.o)
+RCC_AHB3PeriphResetCmd                            /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_rcc.o)
+RCC_APB1PeriphClockCmd                            /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_rcc.o)
+                                                  /Users/User/Desktop/STM32F4_Examples/02_USART/build/main.o
+RCC_APB1PeriphClockLPModeCmd                      /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_rcc.o)
+RCC_APB1PeriphResetCmd                            /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_rcc.o)
+                                                  /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_usart.o)
+RCC_APB2PeriphClockCmd                            /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_rcc.o)
+RCC_APB2PeriphClockLPModeCmd                      /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_rcc.o)
+RCC_APB2PeriphResetCmd                            /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_rcc.o)
+                                                  /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_usart.o)
+RCC_AdjustHSICalibrationValue                     /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_rcc.o)
+RCC_BackupResetCmd                                /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_rcc.o)
+RCC_ClearFlag                                     /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_rcc.o)
+RCC_ClearITPendingBit                             /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_rcc.o)
+RCC_ClockSecuritySystemCmd                        /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_rcc.o)
+RCC_DeInit                                        /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_rcc.o)
+RCC_GetClocksFreq                                 /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_rcc.o)
+                                                  /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_usart.o)
+RCC_GetFlagStatus                                 /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_rcc.o)
+RCC_GetITStatus                                   /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_rcc.o)
+RCC_GetSYSCLKSource                               /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_rcc.o)
+RCC_HCLKConfig                                    /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_rcc.o)
+RCC_HSEConfig                                     /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_rcc.o)
+RCC_HSICmd                                        /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_rcc.o)
+RCC_I2SCLKConfig                                  /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_rcc.o)
+RCC_IRQHandler                                    /Users/User/Desktop/STM32F4_Examples/02_USART/build/startup_stm32f4xx.o
+RCC_ITConfig                                      /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_rcc.o)
+RCC_LSEConfig                                     /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_rcc.o)
+RCC_LSICmd                                        /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_rcc.o)
+RCC_LTDCCLKDivConfig                              /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_rcc.o)
+RCC_MCO1Config                                    /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_rcc.o)
+RCC_MCO2Config                                    /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_rcc.o)
+RCC_PCLK1Config                                   /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_rcc.o)
+RCC_PCLK2Config                                   /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_rcc.o)
+RCC_PLLCmd                                        /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_rcc.o)
+RCC_PLLConfig                                     /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_rcc.o)
+RCC_PLLI2SCmd                                     /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_rcc.o)
+RCC_PLLI2SConfig                                  /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_rcc.o)
+RCC_PLLSAICmd                                     /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_rcc.o)
+RCC_PLLSAIConfig                                  /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_rcc.o)
+RCC_RTCCLKCmd                                     /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_rcc.o)
+RCC_RTCCLKConfig                                  /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_rcc.o)
+RCC_SAIBlockACLKConfig                            /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_rcc.o)
+RCC_SAIBlockBCLKConfig                            /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_rcc.o)
+RCC_SAIPLLI2SClkDivConfig                         /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_rcc.o)
+RCC_SAIPLLSAIClkDivConfig                         /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_rcc.o)
+RCC_SYSCLKConfig                                  /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_rcc.o)
+RCC_TIMCLKPresConfig                              /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_rcc.o)
+RCC_WaitForHSEStartUp                             /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_rcc.o)
+RTC_Alarm_IRQHandler                              /Users/User/Desktop/STM32F4_Examples/02_USART/build/startup_stm32f4xx.o
+RTC_WKUP_IRQHandler                               /Users/User/Desktop/STM32F4_Examples/02_USART/build/startup_stm32f4xx.o
+Reset_Handler                                     /Users/User/Desktop/STM32F4_Examples/02_USART/build/startup_stm32f4xx.o
+SDIO_IRQHandler                                   /Users/User/Desktop/STM32F4_Examples/02_USART/build/startup_stm32f4xx.o
+SPI1_IRQHandler                                   /Users/User/Desktop/STM32F4_Examples/02_USART/build/startup_stm32f4xx.o
+SPI2_IRQHandler                                   /Users/User/Desktop/STM32F4_Examples/02_USART/build/startup_stm32f4xx.o
+SPI3_IRQHandler                                   /Users/User/Desktop/STM32F4_Examples/02_USART/build/startup_stm32f4xx.o
+SVC_Handler                                       /Users/User/Desktop/STM32F4_Examples/02_USART/build/startup_stm32f4xx.o
+SysTick_CLKSourceConfig                           /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(misc.o)
+SysTick_Handler                                   /Users/User/Desktop/STM32F4_Examples/02_USART/build/main.o
+SystemCoreClock                                   /Users/User/Desktop/STM32F4_Examples/02_USART/build/system_stm32f4xx.o
+                                                  /Users/User/Desktop/STM32F4_Examples/02_USART/build/main.o
+SystemCoreClockUpdate                             /Users/User/Desktop/STM32F4_Examples/02_USART/build/system_stm32f4xx.o
+SystemInit                                        /Users/User/Desktop/STM32F4_Examples/02_USART/build/system_stm32f4xx.o
+                                                  /Users/User/Desktop/STM32F4_Examples/02_USART/build/startup_stm32f4xx.o
+TAMP_STAMP_IRQHandler                             /Users/User/Desktop/STM32F4_Examples/02_USART/build/startup_stm32f4xx.o
+TIM1_BRK_TIM9_IRQHandler                          /Users/User/Desktop/STM32F4_Examples/02_USART/build/startup_stm32f4xx.o
+TIM1_CC_IRQHandler                                /Users/User/Desktop/STM32F4_Examples/02_USART/build/startup_stm32f4xx.o
+TIM1_TRG_COM_TIM11_IRQHandler                     /Users/User/Desktop/STM32F4_Examples/02_USART/build/startup_stm32f4xx.o
+TIM1_UP_TIM10_IRQHandler                          /Users/User/Desktop/STM32F4_Examples/02_USART/build/startup_stm32f4xx.o
+TIM2_IRQHandler                                   /Users/User/Desktop/STM32F4_Examples/02_USART/build/startup_stm32f4xx.o
+TIM3_IRQHandler                                   /Users/User/Desktop/STM32F4_Examples/02_USART/build/startup_stm32f4xx.o
+TIM4_IRQHandler                                   /Users/User/Desktop/STM32F4_Examples/02_USART/build/startup_stm32f4xx.o
+TIM5_IRQHandler                                   /Users/User/Desktop/STM32F4_Examples/02_USART/build/startup_stm32f4xx.o
+TIM6_DAC_IRQHandler                               /Users/User/Desktop/STM32F4_Examples/02_USART/build/startup_stm32f4xx.o
+TIM7_IRQHandler                                   /Users/User/Desktop/STM32F4_Examples/02_USART/build/startup_stm32f4xx.o
+TIM8_BRK_TIM12_IRQHandler                         /Users/User/Desktop/STM32F4_Examples/02_USART/build/startup_stm32f4xx.o
+TIM8_CC_IRQHandler                                /Users/User/Desktop/STM32F4_Examples/02_USART/build/startup_stm32f4xx.o
+TIM8_TRG_COM_TIM14_IRQHandler                     /Users/User/Desktop/STM32F4_Examples/02_USART/build/startup_stm32f4xx.o
+TIM8_UP_TIM13_IRQHandler                          /Users/User/Desktop/STM32F4_Examples/02_USART/build/startup_stm32f4xx.o
+UART4_IRQHandler                                  /Users/User/Desktop/STM32F4_Examples/02_USART/build/startup_stm32f4xx.o
+UART5_IRQHandler                                  /Users/User/Desktop/STM32F4_Examples/02_USART/build/startup_stm32f4xx.o
+USART1_IRQHandler                                 /Users/User/Desktop/STM32F4_Examples/02_USART/build/startup_stm32f4xx.o
+USART2_IRQHandler                                 /Users/User/Desktop/STM32F4_Examples/02_USART/build/stm32f4xx_it.o
+                                                  /Users/User/Desktop/STM32F4_Examples/02_USART/build/startup_stm32f4xx.o
+USART3_IRQHandler                                 /Users/User/Desktop/STM32F4_Examples/02_USART/build/startup_stm32f4xx.o
+USART6_IRQHandler                                 /Users/User/Desktop/STM32F4_Examples/02_USART/build/startup_stm32f4xx.o
+USART_ClearFlag                                   /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_usart.o)
+USART_ClearITPendingBit                           /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_usart.o)
+USART_ClockInit                                   /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_usart.o)
+USART_ClockStructInit                             /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_usart.o)
+USART_Cmd                                         /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_usart.o)
+                                                  /Users/User/Desktop/STM32F4_Examples/02_USART/build/main.o
+USART_DMACmd                                      /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_usart.o)
+USART_DeInit                                      /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_usart.o)
+USART_GetFlagStatus                               /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_usart.o)
+                                                  /Users/User/Desktop/STM32F4_Examples/02_USART/build/main.o
+USART_GetITStatus                                 /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_usart.o)
+                                                  /Users/User/Desktop/STM32F4_Examples/02_USART/build/stm32f4xx_it.o
+USART_HalfDuplexCmd                               /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_usart.o)
+USART_ITConfig                                    /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_usart.o)
+                                                  /Users/User/Desktop/STM32F4_Examples/02_USART/build/main.o
+USART_Init                                        /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_usart.o)
+                                                  /Users/User/Desktop/STM32F4_Examples/02_USART/build/main.o
+USART_IrDACmd                                     /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_usart.o)
+USART_IrDAConfig                                  /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_usart.o)
+USART_LINBreakDetectLengthConfig                  /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_usart.o)
+USART_LINCmd                                      /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_usart.o)
+USART_OneBitMethodCmd                             /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_usart.o)
+USART_OverSampling8Cmd                            /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_usart.o)
+USART_ReceiveData                                 /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_usart.o)
+USART_ReceiverWakeUpCmd                           /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_usart.o)
+USART_SendBreak                                   /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_usart.o)
+USART_SendData                                    /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_usart.o)
+                                                  /Users/User/Desktop/STM32F4_Examples/02_USART/build/main.o
+USART_SetAddress                                  /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_usart.o)
+USART_SetGuardTime                                /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_usart.o)
+USART_SetPrescaler                                /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_usart.o)
+USART_SmartCardCmd                                /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_usart.o)
+USART_SmartCardNACKCmd                            /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_usart.o)
+USART_StructInit                                  /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_usart.o)
+USART_WakeUpConfig                                /Users/User/Desktop/STM32F4_Examples/02_USART/lib/STM32F4xx_StdPeriph_Driver/libstdperiph.a(stm32f4xx_usart.o)
+USART_puts                                        /Users/User/Desktop/STM32F4_Examples/02_USART/build/main.o
+                                                  /Users/User/Desktop/STM32F4_Examples/02_USART/build/stm32f4xx_it.o
+UsageFault_Handler                                /Users/User/Desktop/STM32F4_Examples/02_USART/build/startup_stm32f4xx.o
+WWDG_IRQHandler                                   /Users/User/Desktop/STM32F4_Examples/02_USART/build/startup_stm32f4xx.o
+__bss_end__                                       /Users/User/Desktop/STM32F4_Examples/02_USART/build/startup_stm32f4xx.o
+__bss_start__                                     /Users/User/Desktop/STM32F4_Examples/02_USART/build/startup_stm32f4xx.o
+__data_end__                                      /Users/User/Desktop/STM32F4_Examples/02_USART/build/startup_stm32f4xx.o
+__data_start__                                    /Users/User/Desktop/STM32F4_Examples/02_USART/build/startup_stm32f4xx.o
+__sidata                                          /Users/User/Desktop/STM32F4_Examples/02_USART/build/startup_stm32f4xx.o
+_estack                                           /Users/User/Desktop/STM32F4_Examples/02_USART/build/startup_stm32f4xx.o
+g_pfnVectors                                      /Users/User/Desktop/STM32F4_Examples/02_USART/build/startup_stm32f4xx.o
+main                                              /Users/User/Desktop/STM32F4_Examples/02_USART/build/main.o
+                                                  /Users/User/Desktop/STM32F4_Examples/02_USART/build/startup_stm32f4xx.o
+msTicks                                           /Users/User/Desktop/STM32F4_Examples/02_USART/build/main.o
+received_str                                      /Users/User/Desktop/STM32F4_Examples/02_USART/build/stm32f4xx_it.o
+setSysTick                                        /Users/User/Desktop/STM32F4_Examples/02_USART/build/main.o
+setup_Periph                                      /Users/User/Desktop/STM32F4_Examples/02_USART/build/main.o
+turnOffLED                                        /Users/User/Desktop/STM32F4_Examples/02_USART/build/CortexM4asmOps.o
+turnOnLED                                         /Users/User/Desktop/STM32F4_Examples/02_USART/build/CortexM4asmOps.o
