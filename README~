@@ -1,6 +1,6 @@
 These examples go along with my Youtube series on STM32F4 Development:
 
-http://www.youtube.com/playlist?list=PL0wGKPc4_PKMqP_EkIwpvExM2rvi_-R3z
+https://www.youtube.com/Tdabboud
 
 Examples:
 	1. Blinky_btn: Basic blinky example which is controlled by the push button on board (Polling method for btn)
