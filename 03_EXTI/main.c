@@ -27,7 +27,7 @@ void setSysTick(){
 void initialize() {
     GPIO_InitTypeDef  GPIO_InitStructure;
     
-    // ---------- GPIO  for LEDS -------- //
+    // ---------- GPIO  for LED (PD13) -------- //
     // GPIOD Periph clock enable
     RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOD, ENABLE);
     
@@ -40,7 +40,7 @@ void initialize() {
     GPIO_Init(GPIOD, &GPIO_InitStructure);
     
     
-    // ---------- GPIO  for BTN -------- //
+    // ---------- GPIO  for User Button (PA0) -------- //
     NVIC_InitTypeDef NVIC_InitStructure;
     EXTI_InitTypeDef EXTI_InitStructure;
     
@@ -50,27 +50,29 @@ void initialize() {
     RCC_APB2PeriphClockCmd(RCC_APB2Periph_SYSCFG, ENABLE);
     
     /* Configure PA0 pin as input floating */
-    GPIO_InitStructure.GPIO_Mode = GPIO_Mode_IN; //Load parameters into GPIO data structure
-    GPIO_InitStructure.GPIO_PuPd = GPIO_PuPd_NOPULL;
     GPIO_InitStructure.GPIO_Pin = GPIO_Pin_0;
-    GPIO_Init(GPIOA, &GPIO_InitStructure); //Pass structure to GPIO initialization function
+    GPIO_InitStructure.GPIO_Mode = GPIO_Mode_IN;
+    GPIO_InitStructure.GPIO_OType = GPIO_OType_PP;
+    GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
+    GPIO_InitStructure.GPIO_PuPd = GPIO_PuPd_NOPULL;
+    GPIO_Init(GPIOA, &GPIO_InitStructure);
     
     /* Connect EXTI Line0 to PA0 pin */
     SYSCFG_EXTILineConfig(EXTI_PortSourceGPIOA, EXTI_PinSource0);
     
     /* Configure EXTI Line0 */
-    EXTI_InitStructure.EXTI_Line = EXTI_Line0; //Load parameters into EXTI data structure
-    EXTI_InitStructure.EXTI_Mode = EXTI_Mode_Interrupt;
-    EXTI_InitStructure.EXTI_Trigger = EXTI_Trigger_Rising;
-    EXTI_InitStructure.EXTI_LineCmd = ENABLE;
-    EXTI_Init(&EXTI_InitStructure); //Pass structure to EXTI initialization function
+    EXTI_InitStructure.EXTI_Line = EXTI_Line0;              // PA0 is connected to EXTI0
+    EXTI_InitStructure.EXTI_Mode = EXTI_Mode_Interrupt;     // Interrupt mode
+    EXTI_InitStructure.EXTI_Trigger = EXTI_Trigger_Falling; // Trigger on Rising edge
+    EXTI_InitStructure.EXTI_LineCmd = ENABLE;               // Enable the interrupt
+    EXTI_Init(&EXTI_InitStructure);                         // Initialize EXTI
     
-    /* Enable and set EXTI Line0 Interrupt to the lowest priority */
-    NVIC_InitStructure.NVIC_IRQChannel = EXTI0_IRQn; //Load parameters into NVIC data structure
-    NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 0x01;
-    NVIC_InitStructure.NVIC_IRQChannelSubPriority = 0x01;
-    NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;
-    NVIC_Init(&NVIC_InitStructure); //Pass structure to NVIC initialization function
+    /* Enable and set priorities for the EXTI0 in NVIC */
+    NVIC_InitStructure.NVIC_IRQChannel = EXTI0_IRQn;                // Function name for EXTI_Line0 interrupt handler
+    NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 0x01;    // Set priority
+    NVIC_InitStructure.NVIC_IRQChannelSubPriority = 0x01;           // Set sub priority
+    NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;                 // Enable the interrupt
+    NVIC_Init(&NVIC_InitStructure);                                 // Add to NVIC
 }
 
 
