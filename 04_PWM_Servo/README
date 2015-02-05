@@ -1,0 +1,13 @@
+STM32F4 PWM Servo Example
+
+Control two servo motors using TIM4 peripheral in PWM Mode
+
+Build instructions for OSX:
+	build:
+		make
+
+	clean: 
+		make clean
+	flash:
+		make flash
+	
