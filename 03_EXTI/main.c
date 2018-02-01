@@ -77,16 +77,6 @@ void initialize() {
 }
 
 
-void EXTI0_IRQHandler(void) {
-    // Make sure the interrupt flag is set for EXTI0
-    if(EXTI_GetITStatus(EXTI_Line0) != RESET){
-        GPIO_ToggleBits(GPIOD, GPIO_Pin_13);
-        
-        // Clear the interrupt flag
-        EXTI_ClearITPendingBit(EXTI_Line0);
-    }
-}
-
 int main(void) {
     setSysTick();
     initialize();
