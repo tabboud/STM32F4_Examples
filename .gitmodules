@@ -1,0 +1,4 @@
+[submodule "stm32lib"]
+	path = stm32lib
+	url = https://github.com/TDAbboud/stm32lib
+	branch = master
