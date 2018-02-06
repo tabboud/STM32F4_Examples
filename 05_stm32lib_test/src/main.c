@@ -3,6 +3,33 @@
 static void SystemClock_Config(void);
 static void Error_Handler(void);
 
+void initialize_GPIO(uint32_t pin) {
+	GPIO_InitTypeDef  GPIO_InitStructure;
+
+	// ---------- GPIO  for LEDS -------- //
+	// GPIOD Periph clock enable
+    __HAL_RCC_GPIOD_CLK_ENABLE();
+
+	// Configure PD12, PD13, PD14 in output pushpull mode
+	GPIO_InitStructure.Pin = pin;
+	GPIO_InitStructure.Mode = GPIO_MODE_OUTPUT_PP;
+	GPIO_InitStructure.Pull = GPIO_NOPULL;
+	GPIO_InitStructure.Speed = GPIO_SPEED_FREQ_HIGH;
+	HAL_GPIO_Init(GPIOD, &GPIO_InitStructure);
+
+
+	// ---------- GPIO  for Push Button -------- //
+	// GPIOA Periph clock enable
+    __HAL_RCC_GPIOA_CLK_ENABLE();
+
+	// Configure PD12, PD13, PD14 in output pushpull mode
+	GPIO_InitStructure.Pin = GPIO_PIN_0;
+	GPIO_InitStructure.Mode = GPIO_MODE_INPUT;
+	GPIO_InitStructure.Pull = GPIO_PULLDOWN;	//PA0 is connected to high, so use pull down resistor
+	GPIO_InitStructure.Speed = GPIO_SPEED_FREQ_HIGH;
+	HAL_GPIO_Init(GPIOA, &GPIO_InitStructure);
+
+}
 
 int main(void) {
 
@@ -20,11 +47,15 @@ int main(void) {
   /* Configure the system clock to 168 MHz */
   SystemClock_Config();
 
+  uint32_t led_pin = GPIO_PIN_12;
+
+  // Initialize the gpio
+  initialize_GPIO(led_pin);
+
   while (1) {
 		if(HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_0))
-			HAL_GPIO_TogglePin(GPIOD, GPIO_PIN_12);
-		
-		HAL_Delay(200);
+			HAL_GPIO_TogglePin(GPIOD, led_pin);
+		HAL_Delay(1000);
   }
 }
 
