@@ -3,11 +3,6 @@
 static void SystemClock_Config(void);
 static void Error_Handler(void);
 
-//  Delays number of Systicks (happens every 1 ms)
-static void Delay(__IO uint32_t dlyTicks){                                              
-  uint32_t curTicks = msTicks;
-  while ((msTicks - curTicks) < dlyTicks);
-}
 
 int main(void) {
 
@@ -26,10 +21,10 @@ int main(void) {
   SystemClock_Config();
 
   while (1) {
-		if(GPIO_ReadInputDataBit(GPIOA, GPIO_Pin_0))
-			GPIO_ToggleBits(GPIOD, GPIO_Pin_14);
+		if(HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_0))
+			HAL_GPIO_TogglePin(GPIOD, GPIO_PIN_12);
 		
-		Delay(200);
+		HAL_Delay(200);
   }
 }
 
