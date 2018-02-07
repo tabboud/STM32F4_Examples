@@ -1,28 +1,30 @@
-# STM32F4-Discovery Makefile for Mac OSX
+######################################
+# Project Name
+######################################
+PROJ_NAME = blinkystm32lib
 
+OUTPATH = build
+OUTPATH := $(abspath $(OUTPATH))
+BASEDIR := $(abspath ./)
+MKDIR_P = mkdir -p
+
+######################################
+# source
+######################################
 SRCS=$(wildcard src/*.c) 
 # Add assembly source files here or use $(wildcard *.s) for all .s files
 S_SRCS =$(wildcard src/*.s)
 
-# Project name
-PROJ_NAME = blinkystm32lib
-OUTPATH = build
-
-OUTPATH := $(abspath $(OUTPATH))
-BASEDIR := $(abspath ./)
+######################################
+# firmware library
+######################################
 STM32LIB_DIR := $(abspath ../stm32lib)
-MKDIR_P = mkdir -p
-
-# Add library code
 SRCS+=$(wildcard $(STM32LIB_DIR)/STM32F4xx_HAL_Driver/Src/*.c) 
 SRCS+=$(wildcard $(STM32LIB_DIR)/STM32F4xx_HAL_Driver/Src/Legacy/*.c) 
 
 ###################################################
 
 # Check for valid float argument
-# NOTE that you have to run make clan after
-# changing these as hardfloat and softfloat are not
-# binary compatible
 ifneq ($(FLOAT_TYPE), hard)
 ifneq ($(FLOAT_TYPE), soft)
 #override FLOAT_TYPE = hard
@@ -30,25 +32,23 @@ override FLOAT_TYPE = soft
 endif
 endif
 
-###################################################
+#######################################
+# binaries
+#######################################
+PREFIX = arm-none-eabi-
+AS=$(PREFIX)as
+CC=$(PREFIX)gcc
+LD=$(PREFIX)gcc
+OBJCOPY=$(PREFIX)objcopy
+OBJDUMP=$(PREFIX)objdump
+SIZE=$(PREFIX)size
 
-AS=$(BINPATH)arm-none-eabi-as
-CC=$(BINPATH)arm-none-eabi-gcc
-LD=$(BINPATH)arm-none-eabi-gcc
-OBJCOPY=$(BINPATH)arm-none-eabi-objcopy
-OBJDUMP=$(BINPATH)arm-none-eabi-objdump
-SIZE=$(BINPATH)arm-none-eabi-size
-
-LINKER_SCRIPT = stm32f407vgt_flash.ld
-
+#######################################
+# CFLAGS
+#######################################
 CPU = -mcpu=cortex-m4 -mthumb
 
 CFLAGS  = $(CPU) -c -std=gnu99 -g -O2 -Wall
-
-# Libraries to link
-LIBS = -lc -lm -lgcc -lnosys
-LDFLAGS  = $(CPU) -mlittle-endian -mthumb-interwork -Wl,--gc-sections,-Map=$(OUTPATH)/$(PROJ_NAME).map,--cref --specs=nano.specs
-
 
 ifeq ($(FLOAT_TYPE), hard)
 CFLAGS += -fsingle-precision-constant -Wdouble-promotion
@@ -62,21 +62,27 @@ ifeq ($(DEVICE_DEF), )
 DEVICE_DEF = STM32F407xx
 endif
 
-# Add C_DEFS
+# Add C defines
 CFLAGS += -D$(DEVICE_DEF) \
 		  -DUSE_HAL_DRIVER
 
-vpath %.a lib
+#######################################
+# LDFLAGS
+#######################################
+LINKER_SCRIPT = stm32f407vgt_flash.ld
+# libraries
+LIBS = -lc -lm -lgcc -lnosys
+LDFLAGS  = $(CPU) -mlittle-endian -mthumb-interwork -Wl,--gc-sections,-Map=$(OUTPATH)/$(PROJ_NAME).map,--cref --specs=nano.specs
 
+
+######################################
 # Includes
+######################################
 INCLUDE_PATHS = -I$(STM32LIB_DIR)/CMSIS/Include
 INCLUDE_PATHS += -I$(STM32LIB_DIR)/CMSIS/STM32F4xx/Include
 INCLUDE_PATHS += -I$(STM32LIB_DIR)/STM32F4xx_HAL_Driver/Inc
 INCLUDE_PATHS += -I$(STM32LIB_DIR)/STM32F4xx_HAL_Driver/Inc/Legacy
 INCLUDE_PATHS += -I$(BASEDIR)/inc
-
-# Library paths
-# LIBPATHS = -L$(BASEDIR)/lib/STM32F4xx_StdPeriph_Driver
 
 OBJS = $(SRCS:.c=.o)
 OBJS += $(S_SRCS:.s=.o)
